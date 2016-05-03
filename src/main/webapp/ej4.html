@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+	<div ng-app="" ng-init="jugadores=[
+	{name:'Xavier Pandis',pais:'España',posicion:'Alero'},
+	{name:'Javier Bono',pais:'España',posicion:'Pivot'},
+	{name:'Carlos Menendez',pais:'España',posicion:'Base'}]">
+		<p>Jugadores:</p>
+		<ul>
+		  <li ng-repeat="jugador in jugadores">
+		  <b>Nombre:</b> {{jugador.name}}, <b>Posicion:</b> {{jugador.posicion}}, <b>Pais:</b> {{jugador.pais}}</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "ligaBaloncestoApp": {
+        "entrenador" : {
+            "home": {
+                "title": "Entrenadors",
+                "createLabel": "Créer un nouveau Entrenador",
+                "createOrEditLabel": "Créer ou éditer un Entrenador"
+            },
+            "created": "Un nouveau Entrenador a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Entrenador avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Entrenador avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Entrenador {{ id }} ?"
+            },
+            "detail": {
+                "title": "Entrenador"
+            },
+            "nombre": "Nombre",
+            "fechaNacimiento": "FechaNacimiento",
+            "equipo": "Equipo"
+        }
+    }
+}
+

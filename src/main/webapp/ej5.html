@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+	<div ng-app="myApp" ng-controller="jugadorCTRL">
+		<p>Por nombre:</p>
+		<!--  Orden Nombre  -->
+		<ul>
+		  <li ng-repeat="jugador in jugadores | orderBy: 'name'">
+		  <b>Nombre:</b> {{jugador.name}}, <b>Posicion:</b> {{jugador.posicion}}, <b>Pais:</b> {{jugador.pais}}</li>
+		</ul>
+		<!--  Orden Pais  -->
+		<p>Por pais:</p>
+		<ul>
+		  <li ng-repeat="jugador in jugadores | orderBy:'pais'">
+		  <b>Nombre:</b> {{jugador.name}}, <b>Posicion:</b> {{jugador.posicion}}, <b>Pais:</b> {{jugador.pais}}</li>
+		</ul>
+		<!--  Orden Posicion  -->
+		<p>Por posicion:</p>
+		<ul>
+		  <li ng-repeat="jugador in jugadores | orderBy:'posicion'">
+		  <b>Nombre:</b> {{jugador.name}}, <b>Posicion:</b> {{jugador.posicion}}, <b>Pais:</b> {{jugador.pais}}</li>
+		</ul>
+	</div>
+	<script>
+	angular.module('myApp', []).controller('jugadorCTRL', function($scope) {
+	    $scope.jugadores = [
+	    {name:'Xavier Pandis',pais:'España',posicion:'Base'},
+		{name:'Javier Bono',pais:'España',posicion:'Pivot'},
+		{name:'Carlos Menendez',pais:'España',posicion:'Alero'},
+		{name:'Eduardo Amilcar',pais:'Canada',posicion:'Base'},
+		{name:'Stephen Curry',pais:'Estados Unidos',posicion:'Base'},
+		{name:'Lebron James',pais:'Estados Unidos',posicion:'Alero'}
+		];
+	});
+	</script>
+</body>
+</html>

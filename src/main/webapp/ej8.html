@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+
+    <div ng-app="myApp" ng-controller="customersCtrl" ng-init="getJ()">
+        Equipo id: <input type="text" ng-model="id_Equipo" ng-change="getJ()"/>
+        <ul>
+            <li ng-repeat="jugador in jugadores">
+                {{ jugador.nombre + ', ' + jugador.posicion + ', ' + jugador.equipo.nombre }}
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('customersCtrl', function($scope, $http) {
+            $scope.id_Equipo = 1;
+            $scope.getJ = function(){
+                if($scope.id_Equipo != ""){
+                    $http.get("api/equipos/"+$scope.id_Equipo+"/jugadores").then(function (response) {
+                        $scope.jugadores = response.data;
+                    });
+                }
+            };
+        });
+    </script>
+
+</body>
+</html>

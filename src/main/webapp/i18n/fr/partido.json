@@ -1,0 +1,23 @@
+{
+    "ligaBaloncestoApp": {
+        "partido" : {
+            "home": {
+                "title": "Partidos",
+                "createLabel": "Créer un nouveau Partido",
+                "createOrEditLabel": "Créer ou éditer un Partido"
+            },
+            "created": "Un nouveau Partido a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Partido avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Partido avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Partido {{ id }} ?"
+            },
+            "detail": {
+                "title": "Partido"
+            },
+            "jornada": "Jornada",
+            "arbitro": "Arbitro"
+        }
+    }
+}
+

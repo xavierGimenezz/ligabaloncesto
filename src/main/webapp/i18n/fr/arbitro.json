@@ -1,0 +1,23 @@
+{
+    "ligaBaloncestoApp": {
+        "arbitro" : {
+            "home": {
+                "title": "Arbitros",
+                "createLabel": "Créer un nouveau Arbitro",
+                "createOrEditLabel": "Créer ou éditer un Arbitro"
+            },
+            "created": "Un nouveau Arbitro a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Arbitro avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Arbitro avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Arbitro {{ id }} ?"
+            },
+            "detail": {
+                "title": "Arbitro"
+            },
+            "nombre": "Nombre",
+            "partido": "Partido"
+        }
+    }
+}
+

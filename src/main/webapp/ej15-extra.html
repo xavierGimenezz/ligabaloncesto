@@ -1,0 +1,36 @@
+
+    <div>
+        <br/>
+        <div class="container" ng-cloak>
+            <div class="well">
+                <form name="formJugador" ng-submit="save()">
+                    Nombre: <input type="text" name="nombre" ng-model="jugador.nombre" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.nombre.$touched && formJugador.nombre.$invalid">El nombre es requerido</span><br/>
+
+                    Fecha Nacimiento: <input type="date" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" name="fechaNacimiento" id="field_fechaNacimiento"
+                                    ng-model="jugador.fechaNacimiento" required/>
+                    <span ng-show="formJugador.fechaNacimiento.$touched && formJugador.fechaNacimiento.$invalid">Fecha nacimiento requerida</span><br/>
+
+                    Posicion: <input type="text" name="posicion" ng-model="jugador.posicion" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.posicion.$touched && formJugador.posicion.$invalid">La posicion es requerida</span><br/>
+
+                    Asistencias Totales: <input type="number" name="asistenciasTotales" ng-model="jugador.asistenciasTotales" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.asistenciasTotales.$touched && formJugador.asistenciasTotales.$invalid">Requerido</span><br/>
+
+                    Canastas Totales: <input type="number" name="canastasTotales" ng-model="jugador.canastasTotales" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.canastasTotales.$touched && formJugador.canastasTotales.$invalid">Requerido</span><br/>
+
+                    Rebotes Totales: <input type="number" name="rebotesTotales" ng-model="jugador.rebotesTotales" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.rebotesTotales.$touched && formJugador.rebotesTotales.$invalid">Requerido</span><br/>
+
+                    Equipos: <select ng-model="jugador.equipo.id" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                        <option ng-repeat="equipo in equipos" value="{{equipo.id}}">{{equipo.nombre}}</option>
+                    </select><br/>
+
+                    <button type="submit" ng-disabled="formJugador.$invalid || isSaving" class="btn btn-primary">
+                        <span>Save</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>

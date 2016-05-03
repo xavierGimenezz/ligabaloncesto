@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+	<div ng-app="">
+		<p>Name: <input type="text" ng-model="name"></p>
+		<p>Fecha de nacimiento: <input type="date" ng-model="fechaNacimiento"></p>
+		<p>País: <input type="text" ng-model="pais"></p>
+		<p>Posición: <input type="text" ng-model="posicion"></p>
+		<p>Canastas Totales: <input type="number" ng-model="canastasTotales"></p>
+		<p>Asistencias Totales: <input type="number" ng-model="asistenciasTotales"></p>
+
+		<p>Name: {{name}}</p>
+		<p>Fecha de nacimiento: {{fechaNacimiento}}</p>
+		<p>País: {{pais}}</p>
+		<p>Posición: {{posicion}}</p>
+		<p>Canastas Totales: {{canastasTotales}}</p>
+		<p>Asistencias Totales: {{asistenciasTotales}}</p>
+	</div>
+</body>
+</html>

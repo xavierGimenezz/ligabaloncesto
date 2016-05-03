@@ -1,0 +1,25 @@
+{
+    "ligaBaloncestoApp": {
+        "socio" : {
+            "home": {
+                "title": "Socios",
+                "createLabel": "Créer un nouveau Socio",
+                "createOrEditLabel": "Créer ou éditer un Socio"
+            },
+            "created": "Un nouveau Socio a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Socio avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Socio avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Socio {{ id }} ?"
+            },
+            "detail": {
+                "title": "Socio"
+            },
+            "nombre": "Nombre",
+            "apellido": "Apellido",
+            "fechaNacimiento": "FechaNacimiento",
+            "equipo": "Equipo"
+        }
+    }
+}
+

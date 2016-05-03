@@ -1,0 +1,29 @@
+{
+    "ligaBaloncestoApp": {
+        "equipo" : {
+            "home": {
+                "title": "Equipos",
+                "createLabel": "Créer un nouveau Equipo",
+                "createOrEditLabel": "Créer ou éditer un Equipo"
+            },
+            "created": "Un nouveau Equipo a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Equipo avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Equipo avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Equipo {{ id }} ?"
+            },
+            "detail": {
+                "title": "Equipo"
+            },
+            "nombre": "Nombre",
+            "fechaCreacion": "FechaCreacion",
+            "pais": "Pais",
+            "jugador": "Jugador",
+            "estadio": "Estadio",
+            "socio": "Socio",
+            "entrenador": "Entrenador",
+            "temporada": "Temporada"
+        }
+    }
+}
+

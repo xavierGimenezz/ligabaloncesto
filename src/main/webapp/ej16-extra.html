@@ -1,0 +1,23 @@
+    <div>
+        <br/>
+        <div class="container" ng-cloak>
+            <div class="well">
+                <form name="formJugador" ng-submit="save()">
+                    Nombre: <input type="text" name="nombre" ng-model="equipo.nombre" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.equipo.$touched && formJugador.equipo.$invalid">El nombre es requerido</span><br/>
+
+                    Fecha Creacion: <input type="date" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" name="fechaCreacion" id="field_fechaCreacion"
+                                    ng-model="equipo.fechaCreacion" required/>
+                    <span ng-show="formJugador.fechaCreacion.$touched && formJugador.fechaCreacion.$invalid">Fecha nacimiento requerida</span><br/>
+
+                    Pais: <input type="text" name="pais" ng-model="equipo.pais" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+                    <span ng-show="formJugador.pais.$touched && formJugador.pais.$invalid">La posicion es requerida</span><br/>
+
+                    <br/>
+                    <button type="submit" ng-disabled="formJugador.$invalid || isSaving" class="btn btn-primary">
+                        <span>Save</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>

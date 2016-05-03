@@ -1,0 +1,40 @@
+    <div>
+        <br/>
+        <div class="container" ng-cloak>
+            <div class="well">
+                Jugadores: <select ng-model="selected" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                        <option value=""></option>
+                        <option ng-repeat="jugador in allJugadores" value="{{jugador.id}}">{{jugador.nombre}}</option>
+                </select>
+
+                <p></p>
+                <button class="btn btn-primary" ng-click="cargarJugador(selected);">
+                    <span>Seleccionar Jugador</span>
+                </button>
+                <br/><br/>
+
+                <form name="formJugador" ng-submit="update()">
+                    Id: <input ng-model="jugadorSel.id" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" disabled/>
+
+                    Nombre: <input type="text" name="nombre" ng-model="jugadorSel.nombre" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+
+                    Posicion: <input type="text" name="posicion" ng-model="jugadorSel.posicion" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+
+                    CanastasTotales: <input type="number" name="canastasTotales" ng-model="jugadorSel.canastasTotales" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+
+                    AsistenciasTotales: <input type="number" name="asistenciasTotales" ng-model="jugadorSel.asistenciasTotales" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+
+                    RebotesTotales: <input type="number" name="rebotesTotales" ng-model="jugadorSel.rebotesTotales" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required" required/>
+
+                    Equipo: <select class="form-control" id="field_equipo" name="equipo" ng-model="jugadorSel.equipo" ng-options="equipo as equipo.nombre for equipo in equipos track by equipo.id">
+                        <option value=""></option>
+                    </select>
+
+                    <br/>
+                    <button type="submit" ng-disabled="formJugador.$invalid || isSaving" class="btn btn-primary">
+                        <span>Save</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>

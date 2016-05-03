@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "liga",
+            "otherEntityName": "liga",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "nombre"
+        },{
+            "relationshipId" : 2,
+            "relationshipName" : "equipo",
+            "otherEntityName" : "equipo",
+            "relationshipType" : "many-to-many",
+            "otherEntityField" : "nombre",
+            "ownerSide" : true
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20151215164624",
+    "dto": "no",
+    "pagination": "pagination"
+}
